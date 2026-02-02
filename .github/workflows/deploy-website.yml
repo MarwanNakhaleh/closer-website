@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'content/landing-pages/website/**'
+      - '**'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
