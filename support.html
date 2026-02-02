@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support for Closer - AI Intimacy Coaching App">
+  <title>Support - Closer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">Closer</a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container page-content">
+      <h1>Support</h1>
+      
+      <p>We're here to help you get the most out of Closer. Whether you have questions, feedback, or need assistance with any aspect of the app, we'd love to hear from you.</p>
+
+      <div class="support-card">
+        <h2>Contact Us</h2>
+        <p>Our support team typically responds within 24-48 hours.</p>
+        <a href="mailto:marwan.nakhaleh@branson.solutions" class="email-link">Email Support</a>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      
+      <h2>How does Closer protect my privacy?</h2>
+      <p>Your privacy is our top priority. We use end-to-end encryption for sensitive data, and we never sell your personal information. Read our <a href="privacy.html">Privacy Policy</a> for complete details.</p>
+
+      <h2>Can I delete my data?</h2>
+      <p>Yes, you can delete your account and all associated data at any time through the app settings. You can also contact us directly to request data deletion.</p>
+
+      <h2>Is Closer a replacement for couples therapy?</h2>
+      <p>No. Closer is designed to complement—not replace—professional relationship counseling or therapy. If you're experiencing serious relationship challenges or mental health concerns, we encourage you to seek help from qualified professionals.</p>
+
+      <h2>How do I cancel my subscription?</h2>
+      <p>Subscriptions are managed through the Apple App Store. To cancel, go to your iPhone Settings > Apple ID > Subscriptions, then select Closer to manage or cancel your subscription.</p>
+
+      <h2>I found a bug. How do I report it?</h2>
+      <p>Please email us with a description of the issue, including what you were doing when it occurred and any error messages you saw. Screenshots are helpful too!</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <p class="copyright">&copy; 2026 Branson Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
