@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Insights for couples who want more from their intimate lives. Articles on desire, connection, and lasting satisfaction.">
+  <title>Blog - Closer</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="../index.html" class="logo">Closer</a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+        <li><a href="../privacy.html">Privacy</a></li>
+        <li><a href="../terms.html">Terms</a></li>
+        <li><a href="../support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container page-content blog-page">
+      <header class="blog-header">
+        <h1>Blog</h1>
+        <p class="blog-intro">Insights for couples who want more from their intimate lives. We write about the science of desire, the practice of connection, and what it actually takes to build lasting satisfaction—together.</p>
+      </header>
+
+      <div class="post-list">
+        <article class="post-card">
+          <a href="20260203-tracking-satisfaction-faster-improvement.html">
+            <span class="post-meta">February 3, 2026 · 5 min read</span>
+            <h2>Why Couples Who Track Satisfaction Report Faster Improvement Than Those Who "Just Talk"</h2>
+            <p class="post-excerpt">Conversation without feedback is just talking. And talking, by itself, doesn't create change—it creates the illusion of change. Here's why tracking works better.</p>
+            <span class="read-more">Read article →</span>
+          </a>
+        </article>
+
+        <article class="post-card">
+          <a href="20260202-conversation-about-sex-not-performance-review.html">
+            <span class="post-meta">February 2, 2026 · 5 min read</span>
+            <h2>How to Start a Conversation About Sex Without Making It Feel Like a Performance Review</h2>
+            <p class="post-excerpt">Most men approach "the talk" like a problem to be solved. We identify an issue, we prepare our case, and we present our findings. It's logical. It's direct. And it's exactly the wrong frame for intimacy.</p>
+            <span class="read-more">Read article →</span>
+          </a>
+        </article>
+
+        <article class="post-card">
+          <a href="20260201-spark-dies-waiting-doesnt-work.html">
+            <span class="post-meta">February 1, 2026 · 6 min read</span>
+            <h2>The Truth About Why "The Spark" Dies—And Why Waiting for It to Return Doesn't Work</h2>
+            <p class="post-excerpt">Your brain is wired to respond strongly to novelty. When you first got together, everything was new. But your brain is also wired to habituate. This is not a flaw in your relationship—it's a feature of your nervous system.</p>
+            <span class="read-more">Read article →</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms of Service</a></li>
+        <li><a href="../support.html">Support</a></li>
+      </ul>
+      <p class="copyright">&copy; 2026 Branson Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
