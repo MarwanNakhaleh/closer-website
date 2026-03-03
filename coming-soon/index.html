@@ -278,7 +278,7 @@
 
         try {
           const action = form.getAttribute('action');
-          if (action && action !== 'https://bransonsolutions.app.n8n.cloud/webhook/closer-waitlist') {
+          if (action && action === 'https://bransonsolutions.app.n8n.cloud/webhook/closer-waitlist') {
             await fetch(action, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
