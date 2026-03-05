@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" width="220" height="44">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2BB3B1"/>
+      <stop offset="100%" stop-color="#B8C4E0"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.6)"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="44" fill="url(#bgGrad)"/>
+  <path d="M4 38 C10 38 14 6 22 22 C30 38 34 6 40 6" stroke="white" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M4 6 C10 6 14 38 22 22 C30 6 34 38 40 38" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+  <circle cx="22" cy="22" r="3.6" fill="url(#ringGrad)"/>
+  <circle cx="22" cy="22" r="1.6" fill="#2BB3B1"/>
+  <text x="54" y="27" font-family="Inter, sans-serif" font-size="22" font-weight="300" letter-spacing="3" fill="white">Closer</text>
+  <text x="55" y="38" font-family="Inter, sans-serif" font-size="7.5" font-weight="400" letter-spacing="2.5" fill="rgba(255,255,255,0.7)">CONNECT &amp; ALIGN</text>
+</svg>
