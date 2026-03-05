@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI-powered intimacy coaching for couples. Build deeper connections and enhance your relationship with personalized insights.">
-  <title>Closer - AI Intimacy Coaching for Couples</title>
+  <meta name="description" content="Track intimacy, get AI coaching, and grow closer as a couple. Closer helps committed partners align and grow together.">
+  <meta property="og:title" content="Closer — Align and grow together">
+  <meta property="og:description" content="Track intimacy, get AI coaching, and grow closer as a couple. Coming to iOS.">
+  <meta property="og:type" content="website">
+  <title>Closer — Align and grow together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,40 +29,160 @@
   </nav>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Rediscover Intimacy Together</h1>
-        <p class="tagline">Connect and align.</p>
-        <p class="subtitle">AI-powered coaching that helps couples build deeper connections, communicate better, and enhance their intimate relationship.</p>
-        <a href="#" class="cta-button">Download on the App Store</a>
+    <!-- Hero -->
+    <section class="hero-home">
+      <!-- Decorative circles -->
+      <div class="hero-circles" aria-hidden="true">
+        <div class="circle-left float-anim"></div>
+        <div class="circle-right float-anim-delayed"></div>
+        <div class="circle-glow pulse-anim"></div>
+      </div>
+
+      <div class="container hero-content">
+        <h1 class="hero-title fade-up fade-up-1">Closer</h1>
+        <p class="hero-tagline fade-up fade-up-2">Align and grow together.</p>
+        <p class="hero-description fade-up fade-up-3">Track your intimate life. Understand your patterns. Get AI coaching built for couples. Grow closer, not apart.</p>
+
+        <form id="waitlist-form" action="https://bransonsolutions.app.n8n.cloud/webhook/closer-waitlist" method="POST" class="hero-form fade-up fade-up-4">
+          <input type="email" name="email" required placeholder="your@email.com" class="hero-input">
+          <button type="submit" class="hero-button">Get Early Access</button>
+        </form>
+        <p id="form-success" class="form-message form-success hidden">You're on the list. We'll be in touch.</p>
+        <p id="form-error" class="form-message form-error hidden">Something went wrong. Please try again.</p>
+
+        <p class="hero-proof fade-up fade-up-5">Join <strong>247</strong> couples waiting for early access</p>
+
+        <div class="hero-badge fade-up fade-up-5">
+          <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          Coming to iOS
+        </div>
       </div>
     </section>
 
-    <section class="features">
+    <!-- Features -->
+    <section class="home-features">
       <div class="container">
-        <h2>How Closer Helps</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">💬</div>
-            <h3>Better Communication</h3>
-            <p>Learn how to express your desires and needs in ways that bring you closer together.</p>
+        <h2 class="section-title-serif">What couples actually need</h2>
+        <p class="section-subtitle">Not another date night reminder. A real practice for understanding your relationship.</p>
+
+        <div class="features-row">
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-teal">
+              <svg class="feature-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3>Track Connection</h3>
+            <p>Log moments of intimacy and connection. See patterns you'd never notice in the day-to-day.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Personalized Insights</h3>
-            <p>Receive tailored guidance based on your unique relationship dynamics and goals.</p>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-lavender">
+              <svg class="feature-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+              </svg>
+            </div>
+            <h3>AI Coaching</h3>
+            <p>Get personalized guidance based on your patterns. Practical advice, not generic platitudes.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">📈</div>
-            <h3>Track Your Progress</h3>
-            <p>See how your connection grows over time with satisfaction tracking and milestone celebrations.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Completely Private</h3>
-            <p>Your intimate conversations stay between you and your partner. Privacy is our foundation.</p>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-teal">
+              <svg class="feature-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+            </div>
+            <h3>Grow Together</h3>
+            <p>Partner pairing with invite codes. Private, shared space for just the two of you.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="home-how-it-works">
+      <div class="container">
+        <h2 class="section-title-serif">Built on what the research says</h2>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Log, don't guess</h3>
+            <p>Quick check-ins after intimate moments. Rate satisfaction, note what worked, flag what didn't. Takes 30 seconds.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>See the patterns</h3>
+            <p>Stress, timing, communication quality — your data reveals what's actually driving satisfaction (and what's killing it).</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Get coached, not lectured</h3>
+            <p>AI that understands your specific relationship dynamics. Concrete suggestions based on your patterns, not generic advice.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h3>Share with your partner</h3>
+            <p>Private pair space with invite codes. See each other's satisfaction trends. Start conversations that matter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="home-quote">
+      <div class="container">
+        <blockquote class="quote-block">
+          "Happy couples aren't lucky.<br>They're intentional."
+        </blockquote>
+        <p class="quote-attribution">Based on 40 years of relationship research.</p>
+      </div>
+    </section>
+
+    <!-- Blog Teaser -->
+    <section class="home-blog">
+      <div class="container">
+        <h2 class="section-title-serif">From the blog</h2>
+        <p class="section-subtitle">Research-backed insights for couples who want more.</p>
+
+        <div class="blog-teaser-grid">
+          <a href="blog/20260305-how-to-talk-about-what-you-want.html" class="blog-teaser-card">
+            <span class="blog-teaser-date">March 5, 2026</span>
+            <h3>How to Talk About What You Want (Without Making It Weird)</h3>
+            <span class="blog-teaser-link">Read article &rarr;</span>
+          </a>
+          <a href="blog/20260304-real-reason-couples-drift-apart.html" class="blog-teaser-card">
+            <span class="blog-teaser-date">March 4, 2026</span>
+            <h3>The Real Reason Long-Term Couples Drift Apart</h3>
+            <span class="blog-teaser-link">Read article &rarr;</span>
+          </a>
+          <a href="blog/20260303-what-couples-therapists-wish-you-knew.html" class="blog-teaser-card">
+            <span class="blog-teaser-date">March 3, 2026</span>
+            <h3>What Couples Therapists Wish You Knew Before Your First Session</h3>
+            <span class="blog-teaser-link">Read article &rarr;</span>
+          </a>
+        </div>
+
+        <div class="blog-teaser-all">
+          <a href="blog/index.html" class="blog-all-link">View all articles &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="home-cta">
+      <div class="container">
+        <h2 class="section-title-serif">Don't drift apart.</h2>
+        <p class="section-subtitle">Get notified when Closer launches on iOS.</p>
+
+        <form id="waitlist-form-bottom" action="https://bransonsolutions.app.n8n.cloud/webhook/closer-waitlist" method="POST" class="cta-form">
+          <input type="email" name="email" required placeholder="your@email.com" class="hero-input">
+          <button type="submit" class="hero-button">Join Waitlist</button>
+        </form>
+        <p id="form-success-bottom" class="form-message form-success hidden">You're on the list. We'll be in touch.</p>
+        <p id="form-error-bottom" class="form-message form-error hidden">Something went wrong. Please try again.</p>
       </div>
     </section>
   </main>
@@ -77,15 +203,44 @@
     // Mobile menu toggle
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
-    
+
     menuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
 
-    // Close menu when clicking a link
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+      });
+    });
+
+    // Waitlist form handling
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = form.querySelector('input[name="email"]').value;
+        const isBottom = form.id.includes('bottom');
+        const successEl = document.getElementById(isBottom ? 'form-success-bottom' : 'form-success');
+        const errorEl = document.getElementById(isBottom ? 'form-error-bottom' : 'form-error');
+
+        try {
+          const action = form.getAttribute('action');
+          if (action && action === 'https://bransonsolutions.app.n8n.cloud/webhook/closer-waitlist') {
+            await fetch(action, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email, source: 'homepage', timestamp: new Date().toISOString() })
+            });
+          }
+          successEl.classList.remove('hidden');
+          errorEl.classList.add('hidden');
+          form.querySelector('input[name="email"]').value = '';
+          form.querySelector('button').textContent = 'Joined!';
+          form.querySelector('button').disabled = true;
+        } catch {
+          errorEl.classList.remove('hidden');
+          successEl.classList.add('hidden');
+        }
       });
     });
   </script>
