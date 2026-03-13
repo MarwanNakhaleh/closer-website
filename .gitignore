@@ -3,3 +3,5 @@ files.zip
 .playwright*/
 *.log
 page-*.png
+
+google-cloud-sdk/
