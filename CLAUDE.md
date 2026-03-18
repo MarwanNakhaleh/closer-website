@@ -61,3 +61,24 @@ The project ID is "closer-10276". For any Firebase command that requires a proje
 - SVG mark: two crossing S-curves with gradient ring at center
 - Improved logo in progress
 - See `files/closer-brand-web.md` for full brand system details
+
+- ## Status Tracking
+
+- At the end of EVERY response, you MUST update `.claude/status.json` with the following structure. This file is consumed by an automated morning briefing system.
+
+- ```json
+  {
+    "project": "Closer Website",
+    "last_updated": "<ISO 8601 timestamp>",
+    "recently_completed": ["<what was just done in this and recent prompts>"],
+    "testing_performed": ["<tests written, run, or verified>"],
+    "next_steps": ["<what remains to be done>"]
+  }
+  ```
+
+  After writing the file, commit and push it:
+  ```bash
+  git add .claude/status.json && git commit -m "auto: update project status" --no-verify && git push
+  ```
+
+  This is mandatory — do not skip this step even if the prompt was minor.
